@@ -22,10 +22,14 @@ function toDeposit() {
   const totalDisplayString = totalDisplay.innerText;
   const prvTotalDisplay = parseFloat(totalDisplayString);
 
+  depositAmountInput.value = '';
+
+  if (isNaN(depositAmount)) {
+    alert('Please input number');
+    return;
+  }
   depositDisplay.innerText = prvDepositAmount + depositAmount;
   totalDisplay.innerText = prvTotalDisplay + depositAmount;
-
-  depositAmountInput.value = '';
 }
 // Deposit by button
 depositButton.addEventListener('click', toDeposit);
