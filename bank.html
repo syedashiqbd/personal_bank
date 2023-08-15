@@ -8,14 +8,15 @@
   </head>
   <body>
     <div class="max-w-[1280px] mx-auto">
-      <h1 class="text-6xl font-bold my-10 text-center">
+      <h1 class="lg:text-6xl md:text-5xl text-5xl font-bold my-10 text-center">
         Welcome to <span class="text-pink-950">Baaper Bank 🏦</span>
       </h1>
       <div class="bg-pink-950 p-10">
         <h2 class="text-4xl mb-8 font-bold text-white text-center">
           DASHBOARD
         </h2>
-        <div class="3_column_part grid grid-cols-3 gap-12 text-white">
+        <!-- 3 column part -->
+        <div class=" grid lg:grid-cols-3 grid-cols-1 gap-12 text-white">
           <div class="deposit bg-green-500 rounded p-10 hover:bg-green-400">
             <h2 class="text-4xl mb-2 text-pink-950 font-semibold">Deposit</h2>
             <hr>
@@ -32,11 +33,12 @@
             <h1 class="text-5xl mt-4 font-bold">$<span id="total_display">1240</span></h1>
           </div>
         </div>
-        <div class="2_column_part mt-8 grid grid-cols-2 gap-16 text-white">
-          <div class="deposit bg-green-700 rounded p-16">
-            <h2 class="text-4xl mb-2 font-semibold">Deposit Amount</h2>
+        <!-- 2 column part -->
+        <div class=" lg:mt-16 mt-16 grid lg:grid-cols-2 grid-cols-1 gap-16 text-white">
+          <div class="deposit bg-green-700 rounded lg:p-16 p-6">
+            <h2 class="lg:text-4xl text-3xl mb-2 font-semibold">Deposit Amount</h2>
             <hr>
-            <input class="block mt-8 mb-4 w-full py-2 px-4 text-black rounded" type="text" name="" placeholder="$ Amount you want to deposit" id="dpsit_amnt_inpt">
+            <input class="block lg:mt-8 mt-4 mb-4 w-full py-2 px-4 text-black rounded" type="text" name="" placeholder="$ Amount you want to deposit" id="dpsit_amnt_inpt">
             <button
             type="submit" id="deposit_btn"
             class="bg-fuchsia-50 py-2 px-8 text-xl text-black font-semibold hover:bg-amber-500 hover:text-white rounded"
@@ -44,11 +46,11 @@
             Deposit
           </button>
           </div>
-          <div class="withdraw bg-red-700 rounded p-16">
-            <h2 class="text-4xl mb-2 font-semibold">Withdraw Amount
+          <div class="withdraw bg-red-700 rounded lg:p-16 p-6">
+            <h2 class="lg:text-4xl text-3xl mb-2 font-semibold">Withdraw Amount
             </h2>
             <hr>
-            <input class="block mt-8 mb-4 w-full py-2 px-4 text-black rounded" type="text" name="" placeholder="$ Amount you want to withdraw" id="wtdrw_amnt_inpt">
+            <input class="block lg:mt-8 mt-4 mb-4 w-full py-2 px-4 text-black rounded" type="text" name="" placeholder="$ Amount you want to withdraw" id="wtdrw_amnt_inpt">
             <button
             type="submit" id="withdraw_btn"
             class="bg-fuchsia-50 py-2 px-8 text-xl text-black font-semibold hover:bg-amber-500 hover:text-white rounded"
@@ -59,7 +61,7 @@
           
         </div>
 
-       <div class="mt-16 flex justify-center">
+       <div class="mt-12 flex justify-center">
                 <button
                 type="submit"
                 id="logout_btn"
